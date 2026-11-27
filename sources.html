@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>資料來源與授權｜台股ETF・基金績效一覽</title>
+<meta name="description" content="本站使用的公開資料來源、授權方式與計算方法說明">
+<link rel="canonical" href="https://lindlarcat69.github.io/sources.html">
+<meta property="og:title" content="資料來源與授權｜台股ETF・基金績效一覽">
+<meta property="og:description" content="本站使用的公開資料來源、授權方式與計算方法說明">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="static/style.css">
+<meta name="google-site-verification" content="1Q71bBRcgPwWjfAgk-1r7zVtSR3QYBANUw19xlSB-dE">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">台股ETF・基金績效一覽</a>
+    <nav>
+      <a href="index.html">全部 ETF</a>
+      <a href="rank/dividend.html">高股息排行</a>
+      <a href="calendar.html">除息行事曆</a>
+      <a href="compare/index.html">ETF 比較</a>
+      <a href="funds/index.html">基金</a>
+      <a href="tx.html">台指期</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+
+
+<h1>資料來源與授權</h1>
+<p>台股ETF・基金績效一覽所有數據都來自以下政府機關及證券周邊單位公開提供的資料，依
+<a href="https://data.gov.tw/license" rel="nofollow">政府資料開放授權條款－第1版</a>
+或各單位公開資訊使用規範取用。本站以程式自動下載、整理與計算，未修改原始數值。</p>
+<div class="table-wrap"><table class="wrap-cells"><thead><tr><th>資料集</th><th>提供單位</th><th>網址</th><th>更新頻率</th><th>本站用途</th></tr></thead>
+<tbody><tr><td>上市證券每日收盤行情</td><td>臺灣證券交易所</td><td><a href="https://openapi.twse.com.tw/" rel="nofollow">https://openapi.twse.com.tw/</a></td><td>每個交易日</td><td>ETF 收盤價、成交量、成交值</td></tr><tr><td>每日收盤行情（歷史）</td><td>臺灣證券交易所</td><td><a href="https://www.twse.com.tw/" rel="nofollow">https://www.twse.com.tw/</a></td><td>每個交易日</td><td>ETF 歷史收盤價</td></tr><tr><td>上市股票除權除息預告表</td><td>臺灣證券交易所</td><td><a href="https://openapi.twse.com.tw/" rel="nofollow">https://openapi.twse.com.tw/</a></td><td>每個交易日</td><td>除息行事曆、預計配息金額</td></tr><tr><td>除權除息計算結果表</td><td>臺灣證券交易所</td><td><a href="https://www.twse.com.tw/" rel="nofollow">https://www.twse.com.tw/</a></td><td>每個交易日</td><td>歷年配息紀錄、除息前收盤價</td></tr><tr><td>證券投資信託基金每日淨值</td><td>中華民國證券投資信託暨顧問商業同業公會（金融監督管理委員會證券期貨局提供於政府資料開放平臺）</td><td><a href="https://data.gov.tw/dataset/11109" rel="nofollow">https://data.gov.tw/dataset/11109</a></td><td>每日</td><td>境內基金淨值</td></tr><tr><td>境外基金淨值</td><td>臺灣集中保管結算所</td><td><a href="https://data.gov.tw/dataset/11641" rel="nofollow">https://data.gov.tw/dataset/11641</a></td><td>每日</td><td>境外基金淨值</td></tr><tr><td>境外基金基本資料</td><td>臺灣集中保管結算所</td><td><a href="https://data.gov.tw/dataset/11639" rel="nofollow">https://data.gov.tw/dataset/11639</a></td><td>每日</td><td>境外基金類型、幣別、總代理、投資區域等</td></tr><tr><td>期貨每日交易行情（一般及盤後交易時段）</td><td>臺灣期貨交易所</td><td><a href="https://openapi.taifex.com.tw/" rel="nofollow">https://openapi.taifex.com.tw/</a></td><td>每個交易日</td><td>台指期頁面的 K 線、未平倉量、夜盤</td></tr><tr><td>期貨每日交易行情下載（歷史）</td><td>臺灣期貨交易所</td><td><a href="https://www.taifex.com.tw/cht/3/dlFutDailyMarketView" rel="nofollow">https://www.taifex.com.tw/cht/3/dlFutDailyMarketView</a></td><td>每個交易日</td><td>台指期歷史日 K</td></tr></tbody></table></div>
+<h2>本站自行計算的數值</h2>
+<p>以下數值由本站依上述原始資料計算，計算方式如下，可能與其他網站或投信公布的數字略有差異：</p>
+<ul>
+<li><strong>近 12 月殖利率</strong>：最近 365 天內除息的現金配息總和 ÷ 最新收盤價</li>
+<li><strong>單次殖利率</strong>：該次配息金額 ÷ 除息前收盤價</li>
+<li><strong>填息天數</strong>：除息日起，收盤價第一次回到除息前收盤價所經過的交易日數</li>
+<li><strong>各期間報酬</strong>：最新收盤價（或淨值）÷ 該期間起點的收盤價（或淨值）－ 1，不含配息</li>
+<li><strong>配息頻率</strong>：依最近 365 天內的除息次數判斷</li>
+</ul>
+<p>本站與上述資料提供單位沒有任何合作或隸屬關係，資料如有錯誤，請以原始來源為準。</p>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p><strong>資料來源：</strong>臺灣證券交易所、臺灣期貨交易所、中華民國證券投資信託暨顧問商業同業公會、臺灣集中保管結算所之公開資料，依<a href="https://data.gov.tw/license" rel="nofollow">政府資料開放授權條款－第1版</a>使用（<a href="sources.html">各資料集詳細說明</a>）。資料日期 2026-11-27。本站資料由程式自動整理，可能有延遲或錯誤，請以原始資料來源及各投信公告為準。</p>
+    <p><strong>免責聲明：</strong>本站僅提供資料整理與比較，不構成任何投資建議或推薦。投資有風險，過去績效不代表未來表現，請自行判斷並承擔風險。</p>
+    <p><a href="about.html">關於本站</a>　<a href="sources.html">資料來源</a>　<a href="privacy.html">隱私權政策</a></p>
+  </div>
+</footer>
+
+<script src="static/app.js"></script>
+</body>
+</html>
